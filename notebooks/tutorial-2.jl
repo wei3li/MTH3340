@@ -251,7 +251,7 @@ md"and plot the results"
 
 # ╔═╡ cdba629b-bd09-4060-8d22-6355230468af
 plot(ndofs_3,eh1_3,
-     xaxis=:log, yaxis=:log,
+     xaxis=:identity, yaxis=:log,
      shape=:auto,
      xlabel="DOFS",ylabel="error norm")
 
@@ -288,9 +288,6 @@ plot(ndofs_4,eh1_4,
     #  label=:pconv,
      shape=:auto,
      xlabel="DOFS",ylabel="error norm")
-
-# ╔═╡ 9a09adc3-db12-481f-bb59-45ee38c55b19
-slope_4 = compute_slope([ndofs_4[6:end]],[eh1_4[6:end]],identity,log10)
 
 # ╔═╡ 216ba1a2-c562-4504-b471-e1a34a467006
 md"*Answer:* _Please provide your answer to the exercise 4.1 here_"
@@ -1829,7 +1826,7 @@ version = "1.9.2+0"
 # ╠═4755ea99-f0f7-4ac4-b2d2-73ad315dacec
 # ╟─92bf3e21-7351-427c-9c95-5f424aa11149
 # ╠═24a4d8ef-4b0a-4c1b-be5d-55e0a1db7490
-# ╠═fc6d6cc2-d7ec-4b50-a554-91bfe1a2e960
+# ╟─fc6d6cc2-d7ec-4b50-a554-91bfe1a2e960
 # ╟─0ff1e8f7-3631-42bc-ba44-8a36acc3987d
 # ╠═286c995e-d91e-4077-9818-3d5080099adc
 # ╠═137bb477-9c16-427b-acf8-b1c2eb0fe85e
@@ -1850,7 +1847,6 @@ version = "1.9.2+0"
 # ╠═30871a25-42ab-4cc4-8226-e57677a58085
 # ╠═8337ab99-5b26-4077-a94a-960a9f049d89
 # ╠═6a973562-2793-4a8c-899e-26f5a97f69f9
-# ╠═9a09adc3-db12-481f-bb59-45ee38c55b19
 # ╠═216ba1a2-c562-4504-b471-e1a34a467006
 # ╟─8768594b-1c77-4eaa-bcfc-e933737d7102
 # ╠═5975fc19-f064-47fd-bb2d-84fdc8fd5642
